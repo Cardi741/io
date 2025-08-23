@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniele Cardinali - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (per le icone) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Il nostro CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">DC</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chi-sono.html">Chi sono</a></li>
+                <li><a href="competenze.html">Competenze</a></li>
+                <li><a href="progetti.html">I miei progetti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-text">
+                <h1>Ciao, benvenuto nel mio sito personale</h1>
+                <p>Mi chiamo Daniele, sono uno studente d'informatica.</p>
+            </div>
+            <div class="hero-image-container">
+                <!-- SEGNAPOSTO IMMAGINE: Qui dovrai inserire la tua foto. Il file dovrà chiamarsi 'profile-pic.jpg' -->
+                <img src="images/profile-pic.jpg" alt="Foto profilo di Daniele Cardinali" class="profile-pic">
+            </div>
+            <div class="hero-buttons">
+                <a href="chi-sono.html" class="btn">Chi sono</a>
+                <a href="competenze.html" class="btn">Competenze</a>
+            </div>
+        </section>
+
+        <section id="quote">
+            <blockquote>“Posso ogni cosa in colui che mi fortifica.”</blockquote>
+            <cite>— Filippesi 4:13</cite>
+        </section>
+
+        <section id="contact-form">
+            <h2>Scrivimi</h2>
+            <!-- Questo form aprirà il client di posta dell'utente -->
+            <form action="mailto:danielecardinali999@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="nome" placeholder="Il tuo nome" required>
+                <input type="email" name="email" placeholder="La tua email" required>
+                <textarea name="messaggio" placeholder="Il tuo messaggio" required></textarea>
+                <button type="submit" class="btn">Invia Messaggio</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contatti</h3>
+            <p><i class="fas fa-envelope"></i> danielecardinali999@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Macerata, Marche, Italia</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/_car.dii/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1FDCZAwjwN/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/cardi741" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Daniele Cardinali. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
