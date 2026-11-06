@@ -1,83 +1,40 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniele Cardinali - Portfolio</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome (per le icone) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Il nostro CSS -->
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniele Cardinali – Portfolio</title>
+<meta name="description" content="Portfolio personale di Daniele Cardinali, studente di informatica.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <header>
-        <div class="logo">DC</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="chi-sono.html">Chi sono</a></li>
-                <li><a href="competenze.html">Competenze</a></li>
-                <li><a href="progetti.html">I miei progetti</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="hero">
-            <div class="hero-text">
-                <h1>Ciao, benvenuto nel mio sito personale</h1>
-                <p>Mi chiamo Daniele, sono uno studente d'informatica.</p>
-            </div>
-            <div class="hero-image-container">
-                <!-- SEGNAPOSTO IMMAGINE: Qui dovrai inserire la tua foto. Il file dovrà chiamarsi 'profile-pic.jpg' -->
-                <img src="images/profile-pic.jpg" alt="Foto profilo di Daniele Cardinali" class="profile-pic">
-            </div>
-            <div class="hero-buttons">
-                <a href="chi-sono.html" class="btn">Chi sono</a>
-                <a href="competenze.html" class="btn">Competenze</a>
-            </div>
-        </section>
-
-        <section id="quote">
-            <blockquote>“Posso ogni cosa in colui che mi fortifica.”</blockquote>
-            <cite>— Filippesi 4:13</cite>
-        </section>
-
-        <section id="contact-form">
-            <h2>Scrivimi</h2>
-            <!-- Questo form aprirà il client di posta dell'utente -->
-            <form action="mailto:danielecardinali999@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="nome" placeholder="Il tuo nome" required>
-                <input type="email" name="email" placeholder="La tua email" required>
-                <textarea name="messaggio" placeholder="Il tuo messaggio" required></textarea>
-                <button type="submit" class="btn">Invia Messaggio</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="contact-info">
-            <h3>Contatti</h3>
-            <p><i class="fas fa-envelope"></i> danielecardinali999@gmail.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> Macerata, Marche, Italia</p>
-        </div>
-        <div class="social-links">
-            <a href="https://www.instagram.com/_car.dii/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/share/1FDCZAwjwN/" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://github.com/cardi741" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2024 Daniele Cardinali. Tutti i diritti riservati.</p>
-        </div>
-    </footer>
-
+<header><div class="wrap"><a class="logo" href="index.html" aria-label="Home">DC</a><nav aria-label="Principale"><ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="chi-sono.html">Chi sono</a></li><li><a href="competenze.html">Competenze</a></li><li><a href="progetti.html">I miei progetti</a></li></ul></nav></div></header>
+<main>
+<section id="hero"><div class="wrap">
+<div class="hero-text"><h1>Ciao, sono Daniele.</h1><p>Studente di informatica: costruisco siti e strumenti web, e quando posso mi alleno o gioco a calcio.</p>
+<a class="btn" href="progetti.html">Guarda i progetti</a><a class="btn ghost" href="chi-sono.html">Chi sono</a></div>
+<div class="photo"><img class="profile-pic" src="images/profile-pic.jpg" alt="Daniele Cardinali in campo con la maglia numero 3"><span class="badge"><i class="fas fa-futbol"></i> Numero 3</span></div>
+</div></section>
+<section id="quote"><div class="wrap"><blockquote>“Posso ogni cosa in colui che mi fortifica.”</blockquote><cite>Filippesi 4:13</cite></div></section>
+<section id="contact"><div class="wrap"><h2>Scrivimi</h2>
+<form action="mailto:danielecardinali999@gmail.com" method="post" enctype="text/plain">
+<input type="text" name="nome" placeholder="Il tuo nome" aria-label="Nome" required>
+<input type="email" name="email" placeholder="La tua email" aria-label="Email" required>
+<textarea name="messaggio" placeholder="Il tuo messaggio" aria-label="Messaggio" required></textarea>
+<button type="submit" class="btn">Invia messaggio</button></form></div></section>
+</main>
+<footer><div class="wrap">
+<div><h3>Contatti</h3><p><i class="fas fa-envelope"></i>danielecardinali999@gmail.com</p><p><i class="fas fa-map-marker-alt"></i>Macerata, Marche, Italia</p></div>
+<div class="social"><a href="https://www.instagram.com/_car.dii/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/share/1FDCZAwjwN/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a><a href="https://github.com/cardi741" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+<p class="copy">&copy; 2026 Daniele Cardinali. Tutti i diritti riservati.</p>
+</div></footer>
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.style.width=x.target.dataset.w;io.unobserve(x.target)}}),{threshold:.4});
+document.querySelectorAll('.progress').forEach(p=>{p.style.setProperty('--w',p.dataset.w);io.observe(p)});
+</script>
 </body>
 </html>
